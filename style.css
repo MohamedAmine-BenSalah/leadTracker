@@ -30,13 +30,3 @@ body {
     display: flex;
     justify-content: center;
   }
-
-#centerAlso {
-    display: flex;
-    justify-content: center;
-}
-
-#container {
-  display: flex;
-    justify-content: center;
-}

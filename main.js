@@ -8,6 +8,7 @@ inputBtn.addEventListener('click',()=> {
     let inputLead = inputEl.value;
     
     myLeads.push(inputLead);
+    inputEl.value = ""; 
     renderLeads();  
 })
 let renderLeads = () => {
@@ -19,5 +20,5 @@ let renderLeads = () => {
     
     //manipulating the DOM is expensive so it's better to do it out side of the for loop
     ulEl.innerHTML = listItems
-    console.log(myLeads);
+    // console.log(myLeads);    
 }
