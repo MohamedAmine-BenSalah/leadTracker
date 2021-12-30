@@ -15,10 +15,15 @@ let renderLeads = () => {
     
     let listItems = "";
     for (let i=0;i<myLeads.length;i++) {
-    listItems +=  "<li>" +  myLeads[i] + "</li> "
+    listItems += `
+             <li><a target = '_blank' href='"  ${myLeads[i]} "'> 
+              ${myLeads[i]}
+               </a>
+    </li>
+    `
     }
     
     //manipulating the DOM is expensive so it's better to do it out side of the for loop
     ulEl.innerHTML = listItems
-    // console.log(myLeads);    
+       
 }

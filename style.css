@@ -29,4 +29,16 @@ body {
   #center {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+  }
+
+  ul {
+    list-style: none;
+    
+  }
+  a {
+    color : #5f9341
+  }
+  li a {
+margin-top: 5px;
   }
