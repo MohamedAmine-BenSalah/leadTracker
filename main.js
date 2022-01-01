@@ -23,17 +23,12 @@ deleteBtn.addEventListener('dblclick',()=> {
 })
 
 let tabBtn = document.getElementById('save-btn');
-tabBtn.addEventListener('click',()=>{
-
-    
-
-       chrome.tabs.query({active:true,currentWindow:true}, function (){
-           myLeads.push(tabs[0].url);
-           localStorage.setItem('myLeads',JSON.stringify(myLeads));
-           renderLeads(myLeads)
-       })
-   
-
+tabBtn.addEventListener("click", function(){    
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+        renderLeads(myLeads)
+    })
 })
 
 inputBtn.addEventListener('click',()=> {
